@@ -139,7 +139,7 @@ class Gestor{
             {
                 string memento;
                 decipher(tmp, memento);
-                if(memento.find(target) != memento.npos){
+                if(memento.find(target) != memento.npos || memento.find("URL") != memento.npos){
                     continue;
                 }
                 else{
